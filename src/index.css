@@ -10,3 +10,148 @@ article {
     box-sizing: border-box;
     padding: 5px;
 }
+/* index.css */
+
+/* Global reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* General styles for layout */
+  main {
+    padding: 20px;
+  }
+  
+  header {
+    background-color: #0073e6;
+    padding: 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  h1, h2 {
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    color: #444;
+  }
+  
+  article {
+    background-color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  li {
+    padding: 5px 0;
+  }
+  
+  /* Styling for the NavBar */
+  .navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #0073e6;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .navbar a {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #0073e6;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar a:hover {
+    background-color: #005bb5;
+  }
+  
+  .navbar a.active {
+    background-color: black;
+    color: white;
+  }
+  
+  /* Styles for individual movie cards */
+  article h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  article a {
+    text-decoration: none;
+    color: #0073e6;
+    font-weight: bold;
+  }
+  
+  article a:hover {
+    color: #005bb5;
+  }
+  
+  /* Specific styles for Movie page */
+  main > p {
+    font-size: 16px;
+  }
+  
+  span {
+    display: inline-block;
+    background-color: #f1f1f1;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 8px;
+  }
+  
+  span:hover {
+    background-color: #0073e6;
+    color: white;
+  }
+  
+  /* Error Page Styles */
+  .error-message {
+    font-size: 24px;
+    color: red;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 600px) {
+    .navbar a {
+      font-size: 12px;
+      padding: 8px 15px;
+    }
+  
+    header h1 {
+      font-size: 24px;
+    }
+  
+    article {
+      padding: 8px;
+    }
+  }
+  
